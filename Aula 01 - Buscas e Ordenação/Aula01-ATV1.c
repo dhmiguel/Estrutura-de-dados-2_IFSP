@@ -21,14 +21,14 @@ int main(){
 
    if(resultado != -1){
     printf("Busca Linear realizada com sucesso!\n\n");
-    printf("O Elemento encontrado na busca, localiza-se na posiÁ„o %d\n\n",resultado);
+    printf("O Elemento encontrado na busca, localiza-se na posi√ß√£o %d\n\n",resultado);
    }
    else{
-    printf("Elemento n„o encontrado!\n\n");
+    printf("Elemento n√£o encontrado!\n\n");
    }
 
    for(int i = 0; i < 10; i++){
-    printf("PosiÁ„o[%d] = %d\n",i,desordenado[i]);
+    printf("Posi√ß√£o[%d] = %d\n",i,desordenado[i]);
    }
    system("pause");
    system("cls");
@@ -37,14 +37,14 @@ int main(){
 
    if(resultado != -1){
     printf("Busca Ordenada realizada com sucesso!\n\n");
-    printf("O Elemento encontrado na busca, localiza-se na posiÁ„o %d\n\n",resultado);
+    printf("O Elemento encontrado na busca, localiza-se na posi√ß√£o %d\n\n",resultado);
    }
    else{
-    printf("Elemento n„o encontrado!\n\n");
+    printf("Elemento n√£o encontrado!\n\n");
    }
 
    for(int i = 0; i < 10; i++){
-    printf("PosiÁ„o[%d] = %d\n",i,ordenado[i]);
+    printf("Posi√ß√£o[%d] = %d\n",i,ordenado[i]);
    }
    system("pause");
    system("cls");
@@ -52,19 +52,20 @@ int main(){
    resultado = buscaBinaria(ordenado, 10, num3);
 
    if(resultado != -1){
-    printf("Busca Bin·ria realizada com sucesso!\n\n");
-    printf("O Elemento encontrado na busca, localiza-se na posiÁ„o %d\n\n",resultado);
+    printf("Busca Bin√°ria realizada com sucesso!\n\n");
+    printf("O Elemento encontrado na busca, localiza-se na posi√ß√£o %d\n\n",resultado);
    }
    else{
-    printf("Elemento n„o encontrado!\n\n");
+    printf("Elemento n√£o encontrado!\n\n");
    }
 
    for(int i = 0; i < 10; i++){
-    printf("PosiÁ„o[%d] = %d\n",i,ordenado[i]);
+    printf("Posi√ß√£o[%d] = %d\n",i,ordenado[i]);
    }
    system("pause");
    system("cls");
 }
+return 0;
 
 
 int buscaLinear(int *vetor, int n, int elem){
@@ -111,5 +112,5 @@ int buscaBinaria(int *vetor, int n, int elem){
             }
         }
     }
-    return -1; //Elemento n„o encontrado
+    return -1; //Elemento n√£o encontrado
 }
